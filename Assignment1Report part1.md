@@ -205,13 +205,47 @@ void Renderer::DrawCircle(const glm::ivec2& p1,double radius, const glm::vec3& c
 
 
 
-
-
-
 ## Sanity check 1 drawing
 
 
 ### Rendering the sanity check 1
+
+void Renderer::Render(const Scene& scene)
+{
+
+	/**Setting the screen size**/
+	int half_width = viewport_width / 2;
+	int half_height = viewport_height / 2;
+
+	/**Creating the poins**/
+	glm::ivec2 p1(100, 600);
+	glm::ivec2 p2(800, 600);
+	glm::ivec2 p3(400, 600);
+
+
+	/**Creating the colors**/
+	glm::vec3 color(0,100,0);	
+	glm::vec3 color2(1, 0, 0);
+	glm::vec3 color3(1, 0.5, 0.222324);
+
+
+
+	/**Drawing the senity check**/
+	sanitycheck(p1, 100, 10, color);	
+	sanitycheck(p2, 50, 70, color2);
+	sanitycheck(p3, 300, 100, color3);
+
+
+}
+### sanity check 1 code
+
+
+![image](https://user-images.githubusercontent.com/92427271/137484013-8bf89b6d-9838-42e0-9371-9b38a9476093.png)
+
+## Sanity check 2 drawing
+
+
+### Rendering the sanity check 2
 void Renderer::Render(const Scene& scene)
 {
 
@@ -233,21 +267,21 @@ void Renderer::Render(const Scene& scene)
 
 
 	/**Drawing the sanity check**/
-	sanitycheck(p1, 100, color);
-	sanitycheck(p2, 200, color2);
-	sanitycheck(p3, 50, color3);
+	sanitycheck2(p1, 100, color);
+	sanitycheck2(p2, 200, color2);
+	sanitycheck2(p3, 50, color3);
 
 }
 
 
-### sanity check 1 code
+### sanity check 2 code
 
 /**
 *Input st.: point 1 that contains coordinations a glm::ivec2 object, a double named radius which presents the radius of the circle where all the ponits are
 *and an adress of glm::vec3 which presents the color
 * Output st.: The method returns noting and prints every line between point 1 to the circle
 **/
-void Renderer::sanitycheck(const glm::ivec2& p1, double radius, const glm::vec3& color)
+void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, const glm::vec3& color)
 {
 
 
@@ -280,7 +314,7 @@ void Renderer::sanitycheck(const glm::ivec2& p1, double radius, const glm::vec3&
 ![image](https://user-images.githubusercontent.com/92427271/137465336-ba42fe6d-745d-4ca0-9832-75502f127fd0.png)
 
 
-## Sanity check 2 drawing
+
 
 
 ## Drawing
