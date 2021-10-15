@@ -1,11 +1,11 @@
 
 
 
-### Line drawing
+## Line drawing
 
 
 
-##### Rendering the lines
+### Rendering the lines
 /**
 *Input st.:  The method gets the scene
 *Output st.: The function returns noting and draws the lines between points 1 to 2-4,6-7
@@ -56,7 +56,7 @@ void Renderer::Render(const Scene& scene)
 
 
 
-##### Drawing the line
+### Drawing the line
 
 
 /**
@@ -140,8 +140,8 @@ void Renderer::DrawLine(const glm::ivec2& p1, const glm::ivec2& p2, const glm::v
 
 
 
-### Circle drawing
-##### Rendering the circles
+## Circle drawing
+### Rendering the circles
 
 /**
 *Input st.:  The method gets the scene
@@ -173,7 +173,7 @@ void Renderer::Render(const Scene& scene)
 	DrawCircle(p4, 30, color4);
 
 }
-##### Circle drawing code
+### Circle drawing code
 
 
 /**
@@ -208,10 +208,10 @@ void Renderer::DrawCircle(const glm::ivec2& p1,double radius, const glm::vec3& c
 
 
 
-### Sanity check 1 drawing
+## Sanity check 1 drawing
 
 
-##### Rendering the sanity check 1
+### Rendering the sanity check 1
 void Renderer::Render(const Scene& scene)
 {
 
@@ -240,7 +240,7 @@ void Renderer::Render(const Scene& scene)
 }
 
 
-##### sanity check 1 code
+### sanity check 1 code
 
 /**
 *Input st.: point 1 that contains coordinations a glm::ivec2 object, a double named radius which presents the radius of the circle where all the ponits are
@@ -280,9 +280,9 @@ void Renderer::sanitycheck(const glm::ivec2& p1, double radius, const glm::vec3&
 ![image](https://user-images.githubusercontent.com/92427271/137465336-ba42fe6d-745d-4ca0-9832-75502f127fd0.png)
 
 
-### Sanity check 2 drawing
+## Sanity check 2 drawing
 
 
-### Drawing
+## Drawing
 
 
