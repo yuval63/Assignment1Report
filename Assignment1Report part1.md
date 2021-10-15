@@ -338,4 +338,5 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, const glm::vec3
 
 ## Drawing
 
+![image](https://user-images.githubusercontent.com/92427271/137541499-15504d28-4b4d-468a-a589-bd225045eac5.png)
 
