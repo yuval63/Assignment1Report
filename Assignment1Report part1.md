@@ -238,7 +238,26 @@ void Renderer::Render(const Scene& scene)
 
 }
 ### sanity check 1 code
+void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, double a, const glm::vec3& color)
+{
 
+	glm::ivec2 firstP(p1.x, p1.y);
+	glm::ivec2 newP(p1.x, p1.y);
+	int counter = 1;
+	firstP.x = p1.x; 
+	firstP.y= p1.y+radius;
+	newP.x = firstP.x;
+	newP.y = firstP.y;
+	
+	do {
+		PutPixel(newP.x,newP.y,color);
+		counter++;
+		newP.x = (double)(p1.x + (radius * sin(counter*2 * M_PI / (a ))));
+		newP.y =(double)( p1.y + (radius * cos(counter*2 * M_PI / (a))));
+		cout << "bannana counter: " << counter << " newP.x " << newP.x << " newP.y " << newP.y << " firstP.x " << firstP.x << " firstP.y " << firstP.y <<" sin:" << sin(2 * M_PI / (a * counter)) <<"\n";
+	} while (!(newP.x ==firstP.x && newP.y == firstP.y));
+
+}
 
 ![image](https://user-images.githubusercontent.com/92427271/137484013-8bf89b6d-9838-42e0-9371-9b38a9476093.png)
 
