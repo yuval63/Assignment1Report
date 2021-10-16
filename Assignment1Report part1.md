@@ -126,6 +126,8 @@
 	}
 ```
 
+### Picture of the results
+
 ![image](https://user-images.githubusercontent.com/92427271/137463732-b1ff52d9-8f20-42b9-8eb7-9b7f381d7e21.png)
 
 <a name="circle-drawing"></a>
