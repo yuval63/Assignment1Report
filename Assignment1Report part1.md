@@ -6,63 +6,51 @@
 
 
 ### Rendering the lines
-/**
-*Input st.:  The method gets the scene
-*Output st.: The function returns noting and draws the lines between points 1 to 2-4,6-7
-**/
-void Renderer::Render(const Scene& scene)
-{
 ```c++
-	/**Setting the screen size**/
-	int half_width = viewport_width / 2;
-	int half_height = viewport_height / 2;
+	/**
+	*Input st.:  The method gets the scene
+	*Output st.: The function returns noting and draws the lines between points 1 to 2-4,6-7
+	**/
+	void Renderer::Render(const Scene& scene)
+	{
+		/**Setting the screen size**/
+		int half_width = viewport_width / 2;
+		int half_height = viewport_height / 2;
+
+		/**Creating the poins**/
+		glm::ivec2 p1(100, 100);
+		glm::ivec2 p2(300, 300);
+		glm::ivec2 p3(400, 100);
+		glm::ivec2 p4(100, 400);	
+		glm::ivec2 p6(250, 350);
+		glm::ivec2 p7(350, 250);
+		glm::ivec2 p8(350, 50);
+		glm::ivec2 p9(250, 50);
+
+		/**Creating the colors**/
+		glm::vec3 color(0,100,0);	
+		glm::vec3 color2(1, 0, 0);
+		glm::vec3 color3(1, 0.5, 0.222324);
+		glm::vec3 color4(0.2222, 0.4234, 0.242);
+		glm::vec3 color5(0.131313, 0.4234, 0.242);
+		glm::vec3 color6(0.546946995, 0.111, 0.546946995);
+		glm::vec3 color7(0.3646946995, 0.9111, 0.146946995);
+		glm::vec3 color8(255, 255,255);
+		glm::vec3 color9(0.224245525, 0.546946995, 0.00001);
+
+
+		/**Drawing the lines from point 1 to points 2-4 & 6-9 (idk why I didn't make point 5)**/
+		DrawLine(p1, p2, color);
+		DrawLine(p1, p3, color2);
+		DrawLine(p1, p4, color3);
+		DrawLine(p1, p6, color4);
+		DrawLine(p1, p7, color5);
+		DrawLine(p1, p8, color6);
+		DrawLine(p1, p9, color7);
+	}
 ```
 
-	/**Setting the screen size**/
-	int half_width = viewport_width / 2;
-	int half_height = viewport_height / 2;
-	
-	/**Creating the poins**/
-	glm::ivec2 p1(100, 100);
-	glm::ivec2 p2(300, 300);
-	glm::ivec2 p3(400, 100);
-	glm::ivec2 p4(100, 400);	
-	glm::ivec2 p6(250, 350);
-	glm::ivec2 p7(350, 250);
-	glm::ivec2 p8(350, 50);
-	glm::ivec2 p9(250, 50);
-
-	/**Creating the colors**/
-	glm::vec3 color(0,100,0);	
-	glm::vec3 color2(1, 0, 0);
-	glm::vec3 color3(1, 0.5, 0.222324);
-	glm::vec3 color4(0.2222, 0.4234, 0.242);
-	glm::vec3 color5(0.131313, 0.4234, 0.242);
-	glm::vec3 color6(0.546946995, 0.111, 0.546946995);
-	glm::vec3 color7(0.3646946995, 0.9111, 0.146946995);
-	glm::vec3 color8(255, 255,255);
-	glm::vec3 color9(0.224245525, 0.546946995, 0.00001);
-
-
-	/**Drawing the lines from point 1 to points 2-4 & 6-9 (idk why I didn't make point 5)**/
-	DrawLine(p1, p2, color);
-	DrawLine(p1, p3, color2);
-	DrawLine(p1, p4, color3);
-	DrawLine(p1, p6, color4);
-	DrawLine(p1, p7, color5);
-	DrawLine(p1, p8, color6);
-	DrawLine(p1, p9, color7);
-
-
-
-
-
-}
-
-
-
 ### Drawing the line
-
 
 /**
 *Input st.: 2 ivec2 adresses to p1 and p2 that conntain the coordinates of 2 points, adress to vec3 color which will be the color of the line
