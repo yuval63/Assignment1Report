@@ -82,8 +82,6 @@
 			minY = p2.y;
 		}
 
-
-
 		/**In case the line goes from 2 points with an incline of 0 we're just going to draw a straight line from left to right without going up or down**/
 		if (p1.x == p2.x) {
 			for (int i = minY+1; i < maxY; i++) {
@@ -217,7 +215,7 @@
 ### sanity check 1 code
 
 ```c++
-	void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, double a, const glm::vec3& color)
+	void Renderer::sanitycheck(const glm::ivec2& p1, double radius, double a, const glm::vec3& color)
 	{
 		glm::ivec2 firstP(p1.x, p1.y);
 		glm::ivec2 newP(p1.x, p1.y);
