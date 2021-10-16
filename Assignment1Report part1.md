@@ -218,20 +218,20 @@ void Renderer::Render(const Scene& scene)
 	int half_height = viewport_height / 2;
 
 	/**Creating the poins**/
-	glm::ivec2 p1(100, 600);
-	glm::ivec2 p2(800, 600);
-	glm::ivec2 p3(400, 600);
+	glm::ivec2 p1(800, 100);
+	glm::ivec2 p2(900, 600);
+	glm::ivec2 p3(400, 200);
 
 
 	/**Creating the colors**/
-	glm::vec3 color(0,100,0);	
+	glm::vec3 color(0, 100, 0);
 	glm::vec3 color2(1, 0, 0);
 	glm::vec3 color3(1, 0.5, 0.222324);
 
 
 
 	/**Drawing the senity check**/
-	sanitycheck(p1, 100, 10, color);	
+	sanitycheck(p1, 100, 10, color);
 	sanitycheck(p2, 50, 70, color2);
 	sanitycheck(p3, 300, 100, color3);
 
@@ -251,15 +251,13 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, double a, const
 	
 	do {
 		DrawLine(p1, newP, color);
-		counter++;
 		newP.x = (double)(p1.x + (radius * sin(counter*2 * M_PI / (a ))));
 		newP.y =(double)( p1.y + (radius * cos(counter*2 * M_PI / (a))));
-		cout << "bannana counter: " << counter << " newP.x " << newP.x << " newP.y " << newP.y << " firstP.x " << firstP.x << " firstP.y " << firstP.y <<" sin:" << sin(2 * M_PI / (a * counter)) <<"\n";
+		counter++;
 	} while (!(newP.x ==firstP.x && newP.y == firstP.y));
 
 }
 
-![image](https://user-images.githubusercontent.com/92427271/137484013-8bf89b6d-9838-42e0-9371-9b38a9476093.png)
 ![image](https://user-images.githubusercontent.com/92427271/137589538-2e9a9d1a-d29d-43b9-89b9-ec2372ddceac.png)
 
 ## Sanity check 2 drawing
