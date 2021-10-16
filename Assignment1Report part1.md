@@ -12,15 +12,16 @@
 **/
 void Renderer::Render(const Scene& scene)
 {
-	'''javascript
-		/**Setting the screen size**/
-		int half_width = viewport_width / 2;
-		int half_height = viewport_height / 2;
-	'''
+```
 	/**Setting the screen size**/
 	int half_width = viewport_width / 2;
 	int half_height = viewport_height / 2;
+```
 
+	/**Setting the screen size**/
+	int half_width = viewport_width / 2;
+	int half_height = viewport_height / 2;
+	
 	/**Creating the poins**/
 	glm::ivec2 p1(100, 100);
 	glm::ivec2 p2(300, 300);
