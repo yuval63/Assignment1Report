@@ -1,6 +1,10 @@
 # Table of Contents
 
 1. [ Line drawing ](#line-drawing)
+2. [ Circle drawing ](#circle-drawing)
+3. [ Sanity check 1 drawing ](#sanity-check-1-drawing)
+4. [ Sanity check 2 drawing ](#sanity-check-2-drawing)
+5. [ Drawing ](#drawing)
 
 <a name="line-drawing"></a>
 ## Line drawing
@@ -124,6 +128,7 @@
 
 ![image](https://user-images.githubusercontent.com/92427271/137463732-b1ff52d9-8f20-42b9-8eb7-9b7f381d7e21.png)
 
+<a name="circle-drawing"></a>
 ## Circle drawing
 
 ### Rendering the circles
@@ -188,6 +193,7 @@
 
 ![2021-10-14 (3)](https://user-images.githubusercontent.com/92427271/137371286-82f4bef9-ea8a-4ddb-874b-ec2177b0db3e.png)
 
+<a name="sanity-check-1-drawing"></a>
 ## Sanity check 1 drawing
 
 ### Rendering the sanity check 1
@@ -240,6 +246,7 @@
 
 ![image](https://user-images.githubusercontent.com/92427271/137589538-2e9a9d1a-d29d-43b9-89b9-ec2372ddceac.png)
 
+<a name="sanity-check-2-drawing"></a>
 ## Sanity check 2 drawing
 
 ### Rendering the sanity check 2
@@ -302,6 +309,7 @@
 
 ![image](https://user-images.githubusercontent.com/92427271/137465336-ba42fe6d-745d-4ca0-9832-75502f127fd0.png)
 
+<a name="drawing"></a>
 ## Drawing
 
 ### Code
