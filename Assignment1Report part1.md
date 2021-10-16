@@ -337,10 +337,565 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, const glm::vec3
 
 
 ## Drawing
+### Code
 
+/**
+* Input st.: The color of the picture
+* Output st.: Running over each line drawing the picture
+**/
+void Renderer::drawing(const glm::vec3& color) {
+
+		/**Creating the poins**/
+	glm::ivec2 p1(100, 600);
+	glm::ivec2 p2(1200, 600);
+
+
+	/**Drawing each line 20 times for bigger picture, dawing 26 lines**/
+	for (int i = 0; i < 20; i++) {
+		/**Line 1 (out of 26)**/
+		p1.x = 12 * 20;
+		p1.y = 700-(100 + i);
+		p2.x = 34*20-1;
+		p2.y = 700-(100 + i);
+		DrawLine(p1,p2,color);
+
+		/**Line 2 (out of 26)**/
+		p1.x = 6 * 20;
+		p1.y = 700-(120 + i);
+		p2.x = 41 * 20-1;
+		p2.y = 700-(120 + i);
+		DrawLine(p1, p2, color);
+
+		/**Line 3 (out of 26)**/
+		p1.x = 3 * 20;
+		p1.y = 700-(140 + i);
+		p2.x = 6 * 20-1;
+		p2.y = 700-(140 + i);
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 19 * 20;
+		p2.x = 25 * 20-1;
+		DrawLine(p1, p2, color);
+
+
+
+		p1.x = 35 * 20;
+		p2.x = 50 * 20-1;
+		DrawLine(p1, p2, color);
+
+		/**Line 4 (out of 26)**/
+		p1.x = 2 * 20;
+		p1.y = 700 - (160 + i);
+		p2.x = 5 * 20 - 1;
+		p2.y = 700 - (160 + i);
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 6 * 20;
+		p2.x = 18 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 19 * 20;
+		p2.x = 22 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 25 * 20;
+		p2.x = 48 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		/**Line 5 (out of 26)**/
+		p1.y = 700 - (180 + i);
+		p2.y = 700 - (180 + i);
+
+		p1.x = 2 * 20;
+		p2.x = 9 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 15 * 20;
+		p2.x = 21 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 22 * 20;
+		p2.x = 44 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+	/**Line 6 (out of 26)**/
+		p1.y = 700 - (200 + i);
+		p2.y = 700 - (200 + i);
+
+
+		p1.x = 4 * 20;
+		p2.x = 8 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 9 * 20;
+		p2.x = 10 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 13 * 20;
+		p2.x = 14 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 16 * 20;
+		p2.x = 25 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 33 * 20;
+		p2.x = 42 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+
+	/**Line 7 (out of 26)**/
+		p1.y = 700 - (220 + i);
+		p2.y = 700 - (220 + i);
+
+		p1.x = 7 * 20;
+		p2.x = 8 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 9 * 20;
+		p2.x = 15 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 19 * 20;
+		p2.x = 22 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 25 * 20;
+		p2.x = 28 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+
+		p1.x = 25 * 20;
+		p2.x = 28 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 30 * 20;
+		p2.x = 33 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 37 * 20;
+		p2.x = 44 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+	/**Line 8 (out of 26)**/
+		p1.y = 700 - (240 + i);
+		p2.y = 700 - (240 + i);
+
+
+		p1.x = 15 * 20;
+		p2.x = 25 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 27 * 20;
+		p2.x = 30 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 35 * 20;
+		p2.x = 48 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 9 (out of 26)**/
+		p1.y = 700 - (260 + i);
+		p2.y = 700 - (260 + i);
+
+
+		p1.x = 14 * 20;
+		p2.x = 22 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 24 * 20;
+		p2.x = 27 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 32 * 20;
+		p2.x = 35 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 36 * 20;
+		p2.x = 54 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 10 (out of 26)**/
+		p1.y = 700 - (280 + i);
+		p2.y = 700 - (280 + i);
+
+		p1.x = 2 * 20;
+		p2.x = 14 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 22 * 20;
+		p2.x = 24 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 25 * 20;
+		p2.x = 27 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+
+		p1.x = 29 * 20;
+		p2.x = 35 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 36 * 20;
+		p2.x = 58 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 11 (out of 26)**/
+		p1.y = 700 - (300 + i);
+		p2.y = 700 - (300 + i);
+
+		p1.x = 2 * 20;
+		p2.x = 3 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 8 * 20;
+		p2.x = 10 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 14 * 20;
+		p2.x = 15 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 16 * 20;
+		p2.x = 21 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 24 * 20;
+		p2.x = 25 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 27 * 20;
+		p2.x = 30 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 33 * 20;
+		p2.x = 35 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 36 * 20;
+		p2.x = 59 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 12 (out of 26)**/
+		p1.y = 700 - (320 + i);
+		p2.y = 700 - (320 + i);
+
+		p1.x = 9 * 20;
+		p2.x = 15 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 18 * 20;
+		p2.x = 24 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 25 * 20;
+		p2.x = 29 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 30 * 20;
+		p2.x = 32 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 33 * 20;
+		p2.x = 36 * 20 - 1;
+		DrawLine(p1, p2, color);
+		
+		p1.x = 37 * 20;
+		p2.x = 55 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 13 (out of 26)**/
+		p1.y = 700 - (340 + i);
+		p2.y = 700 - (340 + i);
+
+
+		p1.x = 21 * 20;
+		p2.x = 23 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 24 * 20;
+		p2.x = 32 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 33 * 20;
+		p2.x = 36 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 37 * 20;
+		p2.x = 53 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 14 (out of 26)**/
+
+		p1.y = 700 - (360 + i);
+		p2.y = 700 - (360 + i);
+
+
+		p1.x = 4 * 20;
+		p2.x = 21 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 23 * 20;
+		p2.x = 30 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 32 * 20;
+		p2.x = 36 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 37 * 20;
+		p2.x = 52 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+	/**Line 15 (out of 26)**/
+
+		p1.y = 700 - (380 + i);
+		p2.y = 700 - (380 + i);
+
+
+		p1.x = 6 * 20;
+		p2.x = 8 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 18 * 20;
+		p2.x = 29 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 30 * 20;
+		p2.x = 37 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 38 * 20;
+		p2.x = 54 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 16 (out of 26)**/
+
+		p1.y = 700 - (400 + i);
+		p2.y = 700 - (400 + i);
+
+
+		p1.x = 8 * 20;
+		p2.x = 15 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 20 * 20;
+		p2.x = 28 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 29 * 20;
+		p2.x = 37 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 38 * 20;
+		p2.x = 55 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 17 (out of 26)**/
+
+		p1.y = 700 - (420 + i);
+		p2.y = 700 - (420 + i);
+
+
+		p1.x = 15 * 20;
+		p2.x = 18 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 24 * 20;
+		p2.x = 26 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 28 * 20;
+		p2.x = 37 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 38 * 20;
+		p2.x = 57 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+	/**Line 18 (out of 26)**/
+
+		p1.y = 700 - (440 + i);
+		p2.y = 700 - (440 + i);
+
+
+		p1.x = 18 * 20;
+		p2.x = 24 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 27 * 20;
+		p2.x = 36 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 27 * 20;
+		p2.x = 36 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 37 * 20;
+		p2.x = 58 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 19 (out of 26)**/
+		p1.y = 700 - (460 + i);
+		p2.y = 700 - (460 + i);
+
+
+		p1.x = 22 * 20;
+		p2.x = 23 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 26 * 20;
+		p2.x = 35 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 36 * 20;
+		p2.x = 52 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 54 * 20;
+		p2.x = 59 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 20 (out of 26)**/
+		p1.y = 700 - (480 + i);
+		p2.y = 700 - (480 + i);
+
+
+		p1.x = 21 * 20;
+		p2.x = 22 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 25 * 20;
+		p2.x = 34 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 35 * 20;
+		p2.x = 50 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 21 (out of 26)**/
+		p1.y = 700 - (500 + i);
+		p2.y = 700 - (500 + i);
+		
+		p1.x = 20 * 20;
+		p2.x = 21 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 24 * 20;
+		p2.x = 28 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 34 * 20;
+		p2.x = 49 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+	/**Line 22 (out of 26)**/
+		p1.y = 700 - (520 + i);
+		p2.y = 700 - (520 + i);
+
+		p1.x = 19 * 20;
+		p2.x = 20 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 23 * 20;
+		p2.x = 26 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		p1.x = 42 * 20;
+		p2.x = 52 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 23 (out of 26)**/
+		p1.y = 700 - (540 + i);
+		p2.y = 700 - (540 + i);
+
+		p1.x = 19 * 20;
+		p2.x = 20 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 22 * 20;
+		p2.x = 25 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+
+	/**Line 24 (out of 26)**/
+		p1.y = 700 - (560 + i);
+		p2.y = 700 - (560 + i);
+
+		p1.x = 18 * 20;
+		p2.x = 19 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 22 * 20;
+		p2.x = 23 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 25 (out of 26)**/
+		p1.y = 700 - (580 + i);
+		p2.y = 700 - (580 + i);
+
+		p1.x = 17 * 20;
+		p2.x = 18 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+		p1.x = 22 * 20;
+		p2.x = 23 * 20 - 1;
+		DrawLine(p1, p2, color);
+	/**Line 26 (out of 26)**/
+		p1.y = 700 - (600 + i);
+		p2.y = 700 - (600 + i);
+
+		p1.x = 17 * 20;
+		p2.x = 22 * 20 - 1;
+		DrawLine(p1, p2, color);
+
+
+		
+	}
+
+
+}
+
+### Result
 
 
 ![image](https://user-images.githubusercontent.com/92427271/137588715-281cbaaf-174d-40a0-9be8-d332f40f9c42.png)
 
 Original picture for comparison:
+Berdly from deltarune
 ![image](https://user-images.githubusercontent.com/92427271/137589226-ec771449-1848-43de-86c6-fad53952a392.png)
