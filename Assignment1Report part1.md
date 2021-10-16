@@ -193,6 +193,8 @@
 	}
 ```
 
+### Picture of the results
+
 ![2021-10-14 (3)](https://user-images.githubusercontent.com/92427271/137371286-82f4bef9-ea8a-4ddb-874b-ec2177b0db3e.png)
 
 <a name="sanity-check-1-drawing"></a>
