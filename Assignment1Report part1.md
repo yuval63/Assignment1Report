@@ -260,6 +260,7 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, double a, const
 }
 
 ![image](https://user-images.githubusercontent.com/92427271/137484013-8bf89b6d-9838-42e0-9371-9b38a9476093.png)
+![image](https://user-images.githubusercontent.com/92427271/137589538-2e9a9d1a-d29d-43b9-89b9-ec2372ddceac.png)
 
 ## Sanity check 2 drawing
 
