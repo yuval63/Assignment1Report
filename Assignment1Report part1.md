@@ -12,11 +12,11 @@
 **/
 void Renderer::Render(const Scene& scene)
 {
-```
+	```c++
 	/**Setting the screen size**/
 	int half_width = viewport_width / 2;
 	int half_height = viewport_height / 2;
-```
+	```
 
 	/**Setting the screen size**/
 	int half_width = viewport_width / 2;
