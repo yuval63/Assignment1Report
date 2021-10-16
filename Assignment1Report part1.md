@@ -248,6 +248,8 @@
 	}
 ```
 
+### Picture of the results
+
 ![image](https://user-images.githubusercontent.com/92427271/137589538-2e9a9d1a-d29d-43b9-89b9-ec2372ddceac.png)
 
 <a name="sanity-check-2-drawing"></a>
@@ -310,6 +312,8 @@
 		}
 	}
 ```
+
+### Picture of the results
 
 ![image](https://user-images.githubusercontent.com/92427271/137465336-ba42fe6d-745d-4ca0-9832-75502f127fd0.png)
 
