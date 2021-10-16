@@ -1,18 +1,8 @@
 # Table of Contents
 
-1. [ Description. ](#desc)
-2. [ Usage tips. ](#usage)
+1. [ Line drawing ](#line-drawing)
 
-<a name="desc"></a>
-## 1. Description
-
-sometext
-
-<a name="usage"></a>
-## 2. Usage tips
-
-sometext
-
+<a name="line-drawing"></a>
 ## Line drawing
 
 ### Rendering the lines
