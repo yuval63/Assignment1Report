@@ -250,7 +250,7 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, double a, const
 	newP.y = firstP.y;
 	
 	do {
-		PutPixel(newP.x,newP.y,color);
+		DrawLine(p1, newP, color);
 		counter++;
 		newP.x = (double)(p1.x + (radius * sin(counter*2 * M_PI / (a ))));
 		newP.y =(double)( p1.y + (radius * cos(counter*2 * M_PI / (a))));
@@ -338,6 +338,14 @@ void Renderer::sanitycheck2(const glm::ivec2& p1, double radius, const glm::vec3
 
 ## Drawing
 ### Code
+void Renderer::Render(const Scene& scene)
+{
+	/**Setting the screen size**/
+	int half_width = viewport_width / 2;
+	int half_height = viewport_height / 2;
+	glm::vec3 color(0,0,252);	
+	drawing(color);
+}
 
 /**
 * Input st.: The color of the picture
